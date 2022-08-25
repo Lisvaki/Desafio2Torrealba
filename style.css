@@ -1,0 +1,33 @@
+body{
+
+    background-color: #f2f1E8;
+}
+
+h1{
+    color: #585C4A;
+    text-align: center;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f2f1E8;
+    border-bottom: 5px;
+    border: #585C4A 2px solid;
+    padding: 12px;
+}
+
+.productos>div{
+    border: #585C4A 4px solid;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #f2f1E8;
+}
+
+h2{
+    color: #BC9D7F;
+    display: flex;
+    justify-content: center;
+    background-color: #585C4A;
+    border-bottom: #88837A;
+}
