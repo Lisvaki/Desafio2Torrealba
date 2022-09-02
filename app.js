@@ -42,9 +42,9 @@ switch (Bienvenida) {
 }
 
 //arrays sobre lista de producto del site ecosostenible.
-let numbers= ["protector solar","crema humectante","serum"]
+let numbers= ["Limpiá","Humectá","Protegé"]
 show(numbers)
-showDom ("esencialesPiel", numbers)
+showDom ("cicloEsencial", numbers)
 
 function show(arr){
     for (let i = 0; i<arr.length; i++) {
