@@ -1,40 +1,37 @@
 
+body{
+
+    background-color: beige;
+}
 /* clase de estilo y Color de fondo para el menu*/
 
 .colorMenu{
 
-    background-color: #457373;
+    background-color: #7ED957;
+}
+
+.letrasMenu {
+color: #585C4A;
 }
 /*estilos de H1*/
 
 h1{
     color: #f2f1E8;
     text-align: center;
-    background-color: #457373;
+    background-color: #7ED957;
 }
 
-.productos{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #457373;
-    border-bottom: 5px;
-    border: #585C4A 2px solid;
-    padding: 12px;
-}
 
-.productos>div{
-    border: #585C4A 4px solid;
-    padding: 12px;
-    border-radius: 6px;
-    background-color: #f2f1E8;
-}
 
-h2{
-    color: #BC9D7F;
-    display: flex;
+
+.estilosH2{
+    color: #585C4A;
     justify-content: center;
-    background-color: #585C4A;
-    border-bottom: #88837A;
+    display: flex;
+    border-bottom: solid #f2f1E8;
+    border-top: solid #f2f1e8;
+    background-color: #7ED957;
+
 }
 
 
@@ -42,5 +39,6 @@ h2{
 
 /*estilos de copy*/
 .estilosCopy{
+    background-color: #7ED957;
     text-align: center;
 }

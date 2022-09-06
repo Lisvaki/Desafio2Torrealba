@@ -1,62 +1,20 @@
-//prueba de funcionamiento de consola.
+//saludo de bienvenida a ovars.
+ console.log ("Bienvenido a OVARS");
 
-console.log("Bienvenido a tu espacio OVARS")
+ //llamado de lo que contiene el body de nuestro proyecto a la consola a traves del DOM
 
-// Ventana de bienvenida al site.
+let idpadre = document.getElementById('body')
+console.log (idpadre)
 
+// productos destacados de la semana 
 
-let Bienvenida = prompt("Bienvenid@ a tu espacio OVARS, deseas suscribirte? \n Responde alguna de las siguientes opciones \n 1-Si, quiero saber mas \n 2- Mas tarde")
+let iddestacados = document.getElementById('destacados')
 
-//funcion para solicitar informacion para la subscripcion.
-
-function solicitarEmail(){
+const productos = ["Shampoo solido", "protector biodegradable", "isopos biodegradables", "cepillo dental de bamboo"]
+for (const prod of productos) {
+   
+    let li = document.createElement ('li')
+    li.innerHTML = prod
+destacados.appendChild(li)
     
-    let nombreIngresado = prompt("Dinos tu nombre")
-    alert( "Te llamaremos:" + nombreIngresado)
-    let emailIngresado = prompt("Ingresa tu correo")
-    alert( "Gracias por suscribirte a nuestra comunidad sustentable!")
-    
-    }
-switch (Bienvenida) {
-
-    case "1" :
-
-    alert ("Gracias, ingresa tu email, para que no te pierdas todas las novedades")
-
-    solicitarEmail ();
-    
-    break;
-
-    case"2":
-
-    alert ("Te esperamos la proxima, para que te eneteres \n de toda la vida sustentable que tenemos para vos")
-
-    break;
-
-    default:
-    
-    alert ("Ingresa, una opción válida")
-
-    break;
-
-}
-
-//arrays sobre lista de producto del site ecosostenible.
-let numbers= ["Limpiá","Humectá","Protegé"]
-show(numbers)
-showDom ("cicloEsencial", numbers)
-
-function show(arr){
-    for (let i = 0; i<arr.length; i++) {
-        console.log(arr[i])
-        
-    }
-}
-
-function showDom(productos, arr){
-    document.getElementById(productos).innerHTML="";
-    for(let i=0; i<arr.length;i++){
-        document.getElementById(productos).innerHTML+=
-       `<div> ${arr[i]}<div>`
-    }
 }
